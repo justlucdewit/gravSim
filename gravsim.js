@@ -27,11 +27,11 @@ const createNewBody = (position, velocity, mass, radius, color) => {
 	starCount++;
 }
 
-createNewBody({x:900, y:460}, {x:0, y:0}, 500, 10, "yellow");
-createNewBody({x:1300, y:460}, {x:0, y:0.5}, 0.1, 10, "green");
-createNewBody({x:500, y:460}, {x:0, y:-0.5}, 0.1, 10, "blue");
-createNewBody({x:900, y:860}, {x:-0.5, y:0}, 0.1, 10, "red");
-createNewBody({x:900, y:60}, {x:0.5, y:0}, 0.1, 10, "pink");
+createNewBody({x:900, y:460}, {x:0, y:0}, 500, 10, "rgba(255, 255, 0, 0.1)");
+createNewBody({x:1300, y:460}, {x:0, y:0.5}, 0.1, 10, "rgba(0, 255, 0, 0.1)");
+createNewBody({x:500, y:460}, {x:0, y:-0.5}, 0.1, 10, "rgba(0, 0, 255, 0.1)");
+createNewBody({x:920, y:860}, {x:-0.5, y:0}, 0.1, 10, "rgba(255, 0, 0, 0.1)");
+createNewBody({x:900, y:60}, {x:0.5, y:0}, 0.1, 10, "rgba(0, 255, 255, 0.1)");
 
 const loop = () => {
 	drawBackground();
